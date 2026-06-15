@@ -1,0 +1,23 @@
+{
+  "name": "ohc-changemgmt-hub-rules",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hub Rules v1.0 — coding/security/page-def/ai-usage/domain-healthcare .md + @ohc/eslint-plugin-rules. Self-referential governance (v0.5 §11).",
+  "workspaces": [
+    "eslint-plugin"
+  ],
+  "scripts": {
+    "build": "npm --workspace eslint-plugin run build",
+    "test": "npm --workspace eslint-plugin run test",
+    "validate-manifest": "node scripts/validate-manifest.js"
+  },
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules.git"
+  },
+  "rulesVersion": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
