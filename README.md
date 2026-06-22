@@ -1,4 +1,4 @@
-# ohc-changemgmt-hub-rules
+# AI HUB (powered by ohc-changemgmt-hub stack)
 
 > Hub Rules v1.x — the **.md rulebook** + **runnable ESLint plugin** for the OHC Change Management Hub (`ohc-changemgmt-hub`). Self-referential governance: any change to a rule must pass the 9-gate regression of the sample boilerplate service.
 
@@ -60,5 +60,7 @@ Hub API's `RulesLoaderService` clones this repo (cache at `~/.ohc-changemgmt-hub
 ## Status
 
 Phase 3.5k — Initial migration (v1.0.0). 3 rules implemented, 54 registered placeholders.
+
+**EXPIRES_AT: 2026-09-14** (84일, Phase 5 마운트 엔진 v1 안정화 목표)
 
 See `D:\Workspace\ohc-changemgmt-hub-api\docs\OHC-ChangeMgmt-Hub_V0.5.md` §11 for the governance specification.
