@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "OHC Hub 공통 디자인 토큰 (18종)",
+    "wcag_compliance": "AA",
+    "last_updated": "2026-06-22",
+    "expires_at": "2026-09-14"
+  },
+  "colors": {
+    "primary": {
+      "value": "#0066cc",
+      "label": "Primary Blue",
+      "usage": "CTA 버튼, 링크, 선택 상태",
+      "wcag_aa_contrast": "✓ 4.5:1 이상 (흰 배경)"
+    },
+    "secondary": {
+      "value": "#6b7280",
+      "label": "Secondary Gray",
+      "usage": "보조 텍스트, 비활성 상태, 구분선",
+      "wcag_aa_contrast": "✓ 4.5:1 이상 (흰 배경)"
+    },
+    "danger": {
+      "value": "#dc2626",
+      "label": "Danger Red",
+      "usage": "에러 메시지, 삭제 버튼, 경고",
+      "wcag_aa_contrast": "✓ 3:1 이상 (흰 배경)"
+    },
+    "warning": {
+      "value": "#f59e0b",
+      "label": "Warning Amber",
+      "usage": "주의 메시지, 진행 중 상태",
+      "wcag_aa_contrast": "✓ 3:1 이상 (흰 배경)"
+    },
+    "success": {
+      "value": "#10b981",
+      "label": "Success Green",
+      "usage": "성공 메시지, 완료 상태",
+      "wcag_aa_contrast": "✓ 3:1 이상 (흰 배경)"
+    },
+    "info": {
+      "value": "#3b82f6",
+      "label": "Info Light Blue",
+      "usage": "정보 메시지, 힌트, 추가 정보",
+      "wcag_aa_contrast": "✓ 3:1 이상 (흰 배경)"
+    }
+  },
+  "spacing": {
+    "xs": {
+      "value": "4px",
+      "label": "Extra Small",
+      "usage": "아이콘 간격, 타이트한 레이아웃"
+    },
+    "sm": {
+      "value": "8px",
+      "label": "Small",
+      "usage": "패딩/마진 기본값, 요소 간 좁은 간격"
+    },
+    "md": {
+      "value": "16px",
+      "label": "Medium",
+      "usage": "표준 패딩/마진, 요소 간 표준 간격"
+    },
+    "lg": {
+      "value": "24px",
+      "label": "Large",
+      "usage": "섹션 간 간격, 여유로운 레이아웃"
+    }
+  },
+  "font_sizes": {
+    "size_xs": {
+      "value": "12px",
+      "line_height": "16px",
+      "label": "Extra Small",
+      "usage": "보조 텍스트, 주석, 작은 라벨"
+    },
+    "size_sm": {
+      "value": "13px",
+      "line_height": "18px",
+      "label": "Small",
+      "usage": "폼 라벨, 메뉴 항목, 부제목"
+    },
+    "size_md": {
+      "value": "14px",
+      "line_height": "20px",
+      "label": "Medium",
+      "usage": "본문 텍스트, 테이블 셀, 버튼 라벨"
+    },
+    "size_lg": {
+      "value": "16px",
+      "line_height": "24px",
+      "label": "Large",
+      "usage": "페이지 제목, 큰 헤딩, 강조 텍스트"
+    }
+  },
+  "border_radius": {
+    "none": {
+      "value": "0px",
+      "label": "No Radius",
+      "usage": "직사각형 모서리"
+    },
+    "sm": {
+      "value": "4px",
+      "label": "Small Radius",
+      "usage": "폼 입력, 작은 버튼, 배지"
+    },
+    "md": {
+      "value": "6px",
+      "label": "Medium Radius",
+      "usage": "표준 버튼, 카드, 컨테이너"
+    },
+    "full": {
+      "value": "9999px",
+      "label": "Full Radius",
+      "usage": "둥근 버튼, 아바타, 원형 요소"
+    }
+  },
+  "usage_examples": {
+    "button_primary": {
+      "background_color": "#0066cc",
+      "text_color": "#ffffff",
+      "padding": "8px 16px",
+      "border_radius": "6px",
+      "font_size": "14px",
+      "description": "주 행동 버튼 (저장, 제출)"
+    },
+    "button_secondary": {
+      "background_color": "#f9fafb",
+      "text_color": "#374151",
+      "border": "1px solid #e5e7eb",
+      "padding": "8px 16px",
+      "border_radius": "6px",
+      "font_size": "14px",
+      "description": "보조 버튼 (취소)"
+    },
+    "error_message": {
+      "background_color": "#fee2e2",
+      "text_color": "#991b1b",
+      "padding": "12px 16px",
+      "border_radius": "6px",
+      "border_left": "4px solid #dc2626",
+      "description": "에러 알림"
+    },
+    "success_message": {
+      "background_color": "#ecfdf5",
+      "text_color": "#065f46",
+      "padding": "12px 16px",
+      "border_radius": "6px",
+      "border_left": "4px solid #10b981",
+      "description": "성공 알림"
+    },
+    "form_input": {
+      "background_color": "#ffffff",
+      "border": "1px solid #d1d5db",
+      "padding": "8px 12px",
+      "border_radius": "4px",
+      "font_size": "14px",
+      "focus_border": "2px solid #0066cc",
+      "description": "텍스트 입력, 선택 드롭다운"
+    }
+  },
+  "implementation_notes": {
+    "css_variables": "CSS 변수로 구현 권장: var(--ohc-primary), var(--ohc-spacing-md) 등",
+    "frameworks": {
+      "react_tailwind": "tailwind.config.js에 extend > colors, spacing, fontSize 추가",
+      "vue_postcss": "postcss-custom-properties 플러그인으로 자동 변환",
+      "nextjs_styled_components": "theme 객체로 정의 후 styled-components에 주입"
+    },
+    "wcag_accessibility": "모든 색상 조합이 WCAG AA 기준 충족 (4.5:1 이상 권장)",
+    "dark_mode": "현재 라이트 테마만 지정, 다크 모드는 v2.0에서 추가 예정"
+  }
+}

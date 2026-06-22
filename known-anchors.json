@@ -1,0 +1,192 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Layer D LLM이 evidence 출력 시 사용 가능한 anchor URL 화이트리스트",
+    "total_anchors": 22,
+    "last_updated": "2026-06-22",
+    "expires_at": "2026-09-14"
+  },
+  "anchors": [
+    {
+      "id": "PII-1",
+      "category": "PII",
+      "section": "주민등록번호 (RRN)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/pii-patterns.md#L11",
+      "last_updated": "2026-06-22",
+      "description": "주민등록번호 형식, 정규식, 금지 케이스, 우회 방법"
+    },
+    {
+      "id": "PII-2",
+      "category": "PII",
+      "section": "전화번호 (Phone Number)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/pii-patterns.md#L33",
+      "last_updated": "2026-06-22",
+      "description": "전화번호 형식, 정규식, 금지 케이스, 우회 방법"
+    },
+    {
+      "id": "PII-3",
+      "category": "PII",
+      "section": "이메일 주소 (Email)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/pii-patterns.md#L53",
+      "last_updated": "2026-06-22",
+      "description": "이메일 형식, 정규식, 금지 케이스, 우회 방법"
+    },
+    {
+      "id": "PII-4",
+      "category": "PII",
+      "section": "환자명 (Patient Name)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/pii-patterns.md#L73",
+      "last_updated": "2026-06-22",
+      "description": "환자명 검출 휴리스틱, 금지 케이스, 우회 방법"
+    },
+    {
+      "id": "PII-5",
+      "category": "PII",
+      "section": "진료기록 ID (Medical Record ID)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/pii-patterns.md#L93",
+      "last_updated": "2026-06-22",
+      "description": "진료기록 ID 형식, 검출 휴리스틱, 금지 케이스, 우회 방법"
+    },
+    {
+      "id": "OWASP-1",
+      "category": "OWASP Top 10",
+      "section": "A01:2021 – Broken Access Control",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L7",
+      "last_updated": "2026-06-22",
+      "description": "접근 제어 실패, 금지 케이스, 우회 방법, NestJS 예시"
+    },
+    {
+      "id": "OWASP-2",
+      "category": "OWASP Top 10",
+      "section": "A02:2021 – Cryptographic Failures",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L37",
+      "last_updated": "2026-06-22",
+      "description": "암호화 실패, HTTPS/TLS 요구, AES-256-GCM, bcrypt 해시"
+    },
+    {
+      "id": "OWASP-3",
+      "category": "OWASP Top 10",
+      "section": "A03:2021 – Injection",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L67",
+      "last_updated": "2026-06-22",
+      "description": "SQL/NoSQL/OS 명령어 주입, 파라미터화 쿼리, Zod 검증"
+    },
+    {
+      "id": "OWASP-4",
+      "category": "OWASP Top 10",
+      "section": "A04:2021 – Insecure Design",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L101",
+      "last_updated": "2026-06-22",
+      "description": "안전하지 않은 설계, Rate limiting, MFA, 세션 관리"
+    },
+    {
+      "id": "OWASP-5",
+      "category": "OWASP Top 10",
+      "section": "A05:2021 – Security Misconfiguration",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L127",
+      "last_updated": "2026-06-22",
+      "description": "보안 미설정, 기본 계정, 디버그 모드, 보안 헤더"
+    },
+    {
+      "id": "OWASP-6",
+      "category": "OWASP Top 10",
+      "section": "A06:2021 – Vulnerable and Outdated Components",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L165",
+      "last_updated": "2026-06-22",
+      "description": "취약한 의존성, npm audit, Dependabot, 버전 고정"
+    },
+    {
+      "id": "OWASP-7",
+      "category": "OWASP Top 10",
+      "section": "A07:2021 – Identification and Authentication Failures",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L189",
+      "last_updated": "2026-06-22",
+      "description": "인증 실패, 세션 ID, 비밀번호 정책, JWT exp, MFA"
+    },
+    {
+      "id": "OWASP-8",
+      "category": "OWASP Top 10",
+      "section": "A08:2021 – Software and Data Integrity Failures",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L219",
+      "last_updated": "2026-06-22",
+      "description": "소프트웨어/데이터 무결성, 코드 서명, CI/CD 보안, lock 파일"
+    },
+    {
+      "id": "OWASP-9",
+      "category": "OWASP Top 10",
+      "section": "A09:2021 – Logging and Monitoring Failures",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L245",
+      "last_updated": "2026-06-22",
+      "description": "로깅/모니터링 실패, PII 마스킹, 보안 이벤트, 실시간 알림"
+    },
+    {
+      "id": "OWASP-10",
+      "category": "OWASP Top 10",
+      "section": "A10:2021 – Server-Side Request Forgery (SSRF)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/owasp-top10.md#L281",
+      "last_updated": "2026-06-22",
+      "description": "SSRF, URL 화이트리스트, 내부 IP 차단, DNS rebinding 방지"
+    },
+    {
+      "id": "CHROME-1",
+      "category": "Chrome HTML Structure",
+      "section": "헤더 HTML 구조",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/chrome.md#L7",
+      "last_updated": "2026-06-22",
+      "description": "공통 헤더 HTML, 로고, 메뉴, 사용자 메뉴 구조"
+    },
+    {
+      "id": "CHROME-2",
+      "category": "Chrome HTML Structure",
+      "section": "헤더 CSS 구조",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/chrome.md#L47",
+      "last_updated": "2026-06-22",
+      "description": "공통 헤더 CSS, 반응형 디자인, 스타일 가이드"
+    },
+    {
+      "id": "CHROME-3",
+      "category": "Chrome HTML Structure",
+      "section": "프레임워크별 구현",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/chrome.md#L181",
+      "last_updated": "2026-06-22",
+      "description": "React/Next.js, NestJS/EJS 구현 예시"
+    },
+    {
+      "id": "DESIGN-1",
+      "category": "Design Tokens",
+      "section": "색상 토큰 (6종)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/design-tokens.json#L15",
+      "last_updated": "2026-06-22",
+      "description": "Primary/Secondary/Danger/Warning/Success/Info 색상"
+    },
+    {
+      "id": "DESIGN-2",
+      "category": "Design Tokens",
+      "section": "간격/크기/반경 토큰 (12종)",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/design-tokens.json#L46",
+      "last_updated": "2026-06-22",
+      "description": "Spacing(4종), Font sizes(4종), Border radius(4종)"
+    },
+    {
+      "id": "EXC-1",
+      "category": "Exceptions",
+      "section": "예외 관리 원칙",
+      "url": "https://github.com/OPEN-Healthcare/ohc-changemgmt-hub-rules/blob/main/exceptions.md#L3",
+      "last_updated": "2026-06-22",
+      "description": "예외 승인/관리, 유효기간 90일, PII 예외 금지"
+    }
+  ],
+  "anchor_count_by_category": {
+    "PII": 5,
+    "OWASP Top 10": 10,
+    "Chrome HTML Structure": 3,
+    "Design Tokens": 2,
+    "Exceptions": 1,
+    "total": 21
+  },
+  "usage_notes": {
+    "layer_d_llm": "Layer D (Claude Sonnet) 코드 분석 시 이 앵커 목록의 URL만 evidence로 인용",
+    "layer_e_reviewer": "Layer E (사용자 리뷰)가 위반 증거 확인 시 이 anchor URL로 원본 규칙 확인",
+    "maintenance": "매월 업데이트 필수, 신규 규칙 추가 시 anchor 추가"
+  }
+}
