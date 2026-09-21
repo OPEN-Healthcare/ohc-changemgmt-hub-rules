@@ -59,7 +59,7 @@ function main() {
     if (seenIds.has(rule.id)) fail(`duplicate rule id: ${rule.id}`);
     seenIds.add(rule.id);
 
-    if (!/^ohc\/[chspa]-[a-z0-9-]+$/.test(rule.id)) {
+    if (!/^ohc\/[chspax]-[a-z0-9-]+$/.test(rule.id)) {
       fail(`rule id format invalid: ${rule.id}`);
       continue;
     }

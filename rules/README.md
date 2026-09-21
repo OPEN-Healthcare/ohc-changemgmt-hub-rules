@@ -18,6 +18,7 @@
 | [PAGE-DEF.md](./PAGE-DEF.md) | page-def.json 작성법 | `ohc/p-*` | #5 openapi, #9 audit-conf |
 | [AI-USAGE.md](./AI-USAGE.md) | AI 사용 정책 | `ohc/a-*` | #9 audit-conf |
 | [DOMAIN-HEALTHCARE.md](./DOMAIN-HEALTHCARE.md) | 헬스케어 도메인 | `ohc/h-*` | #9 audit-conf, REVIEWER 6 영역 |
+| [SCOPE.md](./SCOPE.md) | 권한 / 공개 범위 (SeeLink 앱) | `ohc/x-*` | #2 lint, #9 audit-conf |
 | [INTAKE.md](./INTAKE.md) | (Phase 7 비전) 요구 명세 보조 | — | — |
 
 ---
@@ -81,6 +82,7 @@
 | `p-` | page-def (마운트 명세) |
 | `a-` | ai-usage (AI 사용) |
 | `h-` | healthcare (도메인) |
+| `x-` | scope (권한 / 공개 범위) |
 
 전부 kebab-case, 단어 ≤ 4개.
 
@@ -117,6 +119,7 @@
 | 버전 | 일자 | 변경 |
 |---|---|---|
 | v1.0 (초안) | 2026-06-12 | 5 영역 (CODING / SECURITY / PAGE-DEF / AI-USAGE / DOMAIN-HEALTHCARE) 초기 룰 정의. INTAKE.md 는 Phase 7 도입 시 작성. |
+| v1.1 | 2026-09-21 | SCOPE.md (권한 / 공개 범위, SeeLink 앱) 6 룰 추가 — `ohc/x-*`. |
 
 ---
 

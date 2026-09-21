@@ -38,6 +38,7 @@ The `<category-letter>` must match:
 | page-def | `p` | `rules/PAGE-DEF.md` |
 | ai-usage | `a` | `rules/AI-USAGE.md` |
 | domain-healthcare | `h` | `rules/DOMAIN-HEALTHCARE.md` |
+| scope | `x` | `rules/SCOPE.md` |
 
 Each rule MUST have:
 - A `## <id-without-prefix> — <korean title>` heading in the matching `.md`.

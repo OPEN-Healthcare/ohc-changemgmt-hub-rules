@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "introducedAt": "2026-06-15",
   "description": "Hub Rules v1.0 manifest. Each rule entry: { id, category, doc anchor, severity, implemented }. Loader checks 1:1 between this file, the .md anchors, and the eslint plugin rule map. v0.5 §11 self-referential governance.",
   "rules": [
@@ -68,6 +68,13 @@
     { "id": "ohc/h-ai-output-medical-disclaimer", "category": "domain-healthcare", "doc": "rules/DOMAIN-HEALTHCARE.md#h-ai-output-medical-disclaimer", "severity": "error", "implemented": false, "introducedIn": "1.0.0" },
     { "id": "ohc/h-emergency-access", "category": "domain-healthcare", "doc": "rules/DOMAIN-HEALTHCARE.md#h-emergency-access", "severity": "warn", "implemented": false, "introducedIn": "1.0.0" },
     { "id": "ohc/h-pseudo-anonymization-for-research", "category": "domain-healthcare", "doc": "rules/DOMAIN-HEALTHCARE.md#h-pseudo-anonymization-for-research", "severity": "warn", "implemented": false, "introducedIn": "1.0.0" },
-    { "id": "ohc/h-pii-mask-profile-strict", "category": "domain-healthcare", "doc": "rules/DOMAIN-HEALTHCARE.md#h-pii-mask-profile-strict", "severity": "error", "implemented": false, "introducedIn": "1.0.0" }
+    { "id": "ohc/h-pii-mask-profile-strict", "category": "domain-healthcare", "doc": "rules/DOMAIN-HEALTHCARE.md#h-pii-mask-profile-strict", "severity": "error", "implemented": false, "introducedIn": "1.0.0" },
+
+    { "id": "ohc/x-scope-use-module", "category": "scope", "doc": "rules/SCOPE.md#x-scope-use-module", "severity": "error", "implemented": false, "introducedIn": "1.1.0" },
+    { "id": "ohc/x-scope-no-name-match", "category": "scope", "doc": "rules/SCOPE.md#x-scope-no-name-match", "severity": "error", "implemented": false, "introducedIn": "1.1.0" },
+    { "id": "ohc/x-scope-fail-closed", "category": "scope", "doc": "rules/SCOPE.md#x-scope-fail-closed", "severity": "error", "implemented": false, "introducedIn": "1.1.0" },
+    { "id": "ohc/x-scope-no-admin-default", "category": "scope", "doc": "rules/SCOPE.md#x-scope-no-admin-default", "severity": "error", "implemented": false, "introducedIn": "1.1.0" },
+    { "id": "ohc/x-scope-vendor-untouched", "category": "scope", "doc": "rules/SCOPE.md#x-scope-vendor-untouched", "severity": "error", "implemented": false, "introducedIn": "1.1.0" },
+    { "id": "ohc/x-scope-menu-gate", "category": "scope", "doc": "rules/SCOPE.md#x-scope-menu-gate", "severity": "warn", "implemented": false, "introducedIn": "1.1.0" }
   ]
 }
